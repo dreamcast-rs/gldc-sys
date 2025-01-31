@@ -12,9 +12,9 @@ extern "C" {
                           znear: GLdouble, zFar: GLdouble);
 
     // gluLookAt - Set Camera Position for Rendering
-    pub fn gluLookAt(eyex: GLfloat, eyey: GLfloat, eyez: GLfloat,
-                     centerx: GLfloat, centery: GLfloat, centerz: GLfloat,
-                     upx: GLfloat, upy: GLfloat, upz: GLfloat);
+    pub fn gluLookAt(eyex: GLdouble, eyey: GLdouble, eyez: GLdouble,
+                     centerx: GLdouble, centery: GLdouble, centerz: GLdouble,
+                     upx: GLdouble, upy: GLdouble, upz: GLdouble);
 
     // generate mipmaps for any image provided by the user and then pass them to OpenGL
     pub fn gluBuild2DMipmaps(target: GLenum, internalFormat: GLint,

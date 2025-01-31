@@ -564,12 +564,12 @@ extern "C" {
     pub fn glDrawBuffer(mode: GLenum);
 
     // Depth Testing
-    pub fn glClearDepth(depth: GLfloat);
+    pub fn glClearDepth(depth: GLdouble);
     pub fn glClearDepthf(depth: GLfloat);
     pub fn glDepthMask(flag: GLboolean);
     pub fn glDepthFunc(func: GLenum);
-    pub fn glDepthRange(n: GLclampf, f: GLclampf);
-    pub fn glDepthRangef(n: GLclampf, f: GLclampf);
+    pub fn glDepthRange(n: GLdouble, f: GLdouble);
+    pub fn glDepthRangef(n: GLfloat, f: GLfloat);
 
     // Hints
     // Currently Supported Capabilities:
@@ -691,9 +691,9 @@ extern "C" {
     pub fn glRotatef(angle: GLfloat, x: GLfloat, y: GLfloat, z: GLfloat);
     pub fn glRotated(angle: GLfloat, x: GLfloat, y: GLfloat, z: GLfloat);
 
-    pub fn glOrtho(left: GLfloat, right: GLfloat,
-                   bottom: GLfloat, top: GLfloat,
-                   znear: GLfloat, zfar: GLfloat);
+    pub fn glOrtho(left: GLdouble, right: GLdouble,
+                   bottom: GLdouble, top: GLdouble,
+                   znear: GLdouble, zfar: GLdouble);
 
     pub fn glViewport(x: GLint, y: GLint, width: GLsizei, height: GLsizei);
 
@@ -701,9 +701,9 @@ extern "C" {
 
     pub fn glKosGetMatrix(mode: GLenum, params: *mut GLfloat);
 
-    pub fn glFrustum(left: GLfloat, right: GLfloat,
-                     bottom: GLfloat, top: GLfloat,
-                     znear: GLfloat, zfar: GLfloat);
+    pub fn glFrustum(left: GLdouble, right: GLdouble,
+                     bottom: GLdouble, top: GLdouble,
+                     znear: GLdouble, zfar: GLdouble);
 
     // Fog Functions - client must enable GL_FOG for this to take effect
     pub fn glFogi(pname: GLenum, param: GLint);
