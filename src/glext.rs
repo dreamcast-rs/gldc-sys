@@ -177,6 +177,12 @@ extern "C" {
     pub fn glCompressedTexImage2DARB(target: GLenum, level: GLint, internalformat: GLenum,
                                      width: GLsizei, height: GLsizei, border: GLint,
                                      imageSize: GLsizei, data: *const GLvoid);
+
+    pub fn glCompressedTexSubImage2DARB(target: GLenum, level: GLint,
+                                        xoffset: GLint, yoffset: GLint,
+                                        width: GLsizei, height: GLsizei,
+                                        format: GLenum, imageSize: GLsizei,
+                                        data: *const GLvoid);
 }
 
 // Core aliases
